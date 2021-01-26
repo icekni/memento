@@ -1,24 +1,33 @@
-# Lumen PHP Framework
+# Memento
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+Quand on arrive pas a dormir et qu'on repense aux notions vues la veille, on se dit que ca pourrait etre marrant de faire un petit jeu en JS
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+Puis pourquoi pas utiliser une API, donc va pour du PHP
 
-## Official Documentation
+Et puis meme si je ne suis pas doué en design, pourquoi pas revoir un peu css, ses animations et sa grid.
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Et on finit avec un memento :-)
 
-## Contributing
+## Javascript
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Appel AJAX d'une API pour recuperer le tableau de jeu
+- Generation dynamique du plateau
+- gestion des classes css pour dynamiser le tout
+- A venir :
+  - Detection de la fin de partie
+  - Affichage du nombre de coup
+  - Envoie AJAX pour faire un tableau des scores en BDD
+  - Formulaire pour specifier la difficulté, la taille du plateau, et envoyer via AJAX pour generer un plateau
+- Et qui sait ?
+  - Design
 
-## Security Vulnerabilities
+## PHP
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Une petite API qui renvoie un plateau de jeu et la valeur d'une carte en fonction de son numero
+- A venir : 
+  - Generation aleatoire du plateau de jeu
+  - Gestion de taille differente de plateau en fonction de l'appel AJAX
+  - Protection par token pour pas pouvoir faire les requetes en dehors du jeu
+- Et qui sait ?
+  - WebSocket pour jouer a 2
+  - WebSocket pour chatter avec son adversaire
