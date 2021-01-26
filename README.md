@@ -25,6 +25,7 @@ Et on finit avec un memento :-)
 - A venir : 
   - Generation aleatoire du plateau de jeu
   - Gestion de taille differente de plateau en fonction de l'appel AJAX
+  - Gestion du jeu en php pour eviter les petits malins de l'inspecteur d'element
   - Protection par token pour pas pouvoir faire les requetes en dehors du jeu
 - Et qui sait ?
   - WebSocket pour jouer a 2
