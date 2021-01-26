@@ -18,12 +18,10 @@ Et on finit avec un memento :-)
   - Affichage du nombre de coup
   - Envoie AJAX pour faire un tableau des scores en BDD
   - Formulaire pour specifier la difficulté, la taille du plateau, et envoyer via AJAX pour generer un plateau
-- Et qui sait ?
-  - Design
 
 ## PHP
 
-- Une petite API qui renvoie un plateau de jeu et la valeur d'une carte en fonction de son numero
+- Une petite API qui renvoie un plateau de jeu (pour l'instant fixe) et la valeur d'une carte en fonction de son numero
 - A venir : 
   - Generation aleatoire du plateau de jeu
   - Gestion de taille differente de plateau en fonction de l'appel AJAX
@@ -31,3 +29,11 @@ Et on finit avec un memento :-)
 - Et qui sait ?
   - WebSocket pour jouer a 2
   - WebSocket pour chatter avec son adversaire
+
+## Design (TODO)
+
+Il reste tout a faire de ce coté là
+- Des images a la places de simples lettres, ca serait pas mal
+- Une interface qui guide mieux
+- Des options possibles
+- ...
