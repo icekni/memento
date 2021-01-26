@@ -1,5 +1,5 @@
 const card = {
-  lastCard: null,
+  lastCard: 'first',
   lastCardElement: null,
 
   currentCard: null,
@@ -24,6 +24,16 @@ const card = {
     }
 
   },
+
+  // Et si au lieu de tout faire en JS, on passait par php et une api qui fait vraiment tout
+  /*
+  Mettons que quand je clic sur une carte, ca envoie une requete ajax qui indique quelle carte j'ai tapé, et que mon api me renvoie un json qui contient :
+    - la value de la carte
+    - true ou false suivant si j'ai une paire
+    - le nombre d'essai que j'ai fait
+    - le temps que j'ai pris
+  Il faudrait du coup envoyer la requete AJAX en precisant la derniere carte cliqué et la carte actuelle
+  */
 
   unveil: function(cardElement) {
     // Pour m'assurer qu'un utilisateur ne clique pas trop vite et empeche donc le re-cachement de la carte, je passe card.active a true
@@ -76,7 +86,7 @@ const card = {
           card.active = false;
         }
         // Sinon s'il y a une carte retournée mais que c'est pas la meme
-        else if (card.lastCardElement !== null) {
+        else {
           // On efface la classe .active
           card.currentCard.classList.remove('active');
           card.lastCardElement.classList.remove('active');
@@ -107,6 +117,8 @@ const card = {
   write: function(value) {
     // On ecrit dans la carte sa valeur
     card.currentCard.textContent = value;
+
+    return value;
   },
 
   clean: function(cardElement) {
